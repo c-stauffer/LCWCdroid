@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+         xmlns:local="clr-namespace:LCWCdroid"
+         x:Class="LCWCdroid.MainPage" >
+  <ContentPage>
+    <StackLayout Spacing="0" >
+      <Label Text="{Binding Pages[0].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+      <ListView x:Name="listView0" HasUnevenRows="True" ItemsSource="{Binding Pages[0].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Spacing="0">
+                <Label Text="{Binding Title, Mode=OneWay}" FontSize="Medium" />
+                <Label Text="{Binding Location, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Intersection, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Units, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding IncidentDate, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <StackLayout Spacing="0">
+            <Label Text="{Binding Pages[1].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+      <ListView x:Name="listView1" HasUnevenRows="True" ItemsSource="{Binding Pages[1].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Spacing="0">
+                <Label Text="{Binding Title, Mode=OneWay}" FontSize="Medium" />
+                <Label Text="{Binding Location, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Intersection, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Units, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding IncidentDate, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <StackLayout Spacing="0">
+            <Label Text="{Binding Pages[2].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
+      <ListView x:Name="listView2" HasUnevenRows="True" ItemsSource="{Binding Pages[2].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <StackLayout Spacing="0">
+                <Label Text="{Binding Title, Mode=OneWay}" FontSize="Medium" />
+                <Label Text="{Binding Location, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Intersection, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding Units, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+                <Label Text="{Binding IncidentDate, Mode=OneWay}" FontSize="Small" HorizontalOptions="End" />
+              </StackLayout>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage>
+  
+  <!--<CarouselPage.ItemTemplate>
+    <DataTemplate>
+      <ContentPage>
+        <StackLayout>
+          <Label Text="{Binding PageTitle, Mode=OneWay}" />
+          --><!--<ListView x:Name="listView" ItemsSource="{Binding IncidentList, Mode=OneWay}" >
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <StackLayout>
+                    <Label Text="{Binding Title, Mode=OneWay}"/>
+                    <Label Text="{Binding Location, Mode=OneWay}"/>
+                    <Label Text="{Binding Intersection, Mode=OneWay}"/>
+                    <Label Text="{Binding Units, Mode=OneWay}"/>
+                  </StackLayout>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>--><!--
+        </StackLayout>
+      </ContentPage>
+    </DataTemplate>
+  </CarouselPage.ItemTemplate>-->
+  
+  
+  
+  
+  
+  
+  
+  <!--
+    <StackLayout>
+        -->
+  <!-- Place new controls here -->
+  <!--
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+    </StackLayout>-->
+
+</CarouselPage>

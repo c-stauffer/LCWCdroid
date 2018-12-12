@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCWCdroid.Android", "LCWCdroid\LCWCdroid.Android\LCWCdroid.Android.csproj", "{A676DBA6-B752-4907-9BA6-8F82C90C66D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCWCdroid", "LCWCdroid\LCWCdroid\LCWCdroid.csproj", "{7CE81A41-6808-4DA3-A368-7983030796A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssTester", "RssTester\RssTester.csproj", "{887DB28D-9AFB-4D5B-95F0-1C53B5ABD8C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A676DBA6-B752-4907-9BA6-8F82C90C66D9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7CE81A41-6808-4DA3-A368-7983030796A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE81A41-6808-4DA3-A368-7983030796A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE81A41-6808-4DA3-A368-7983030796A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE81A41-6808-4DA3-A368-7983030796A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887DB28D-9AFB-4D5B-95F0-1C53B5ABD8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887DB28D-9AFB-4D5B-95F0-1C53B5ABD8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887DB28D-9AFB-4D5B-95F0-1C53B5ABD8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887DB28D-9AFB-4D5B-95F0-1C53B5ABD8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EF9662A-5178-4287-9964-0D0AE7BC3D75}
+	EndGlobalSection
+EndGlobal
