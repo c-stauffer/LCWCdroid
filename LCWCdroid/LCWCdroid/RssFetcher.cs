@@ -36,7 +36,7 @@ namespace LCWCdroid
                 System.Diagnostics.Debug.WriteLine("Refresh complete.");
                 return list;
             }
-            catch (Exception ex)
+            catch
             {
                 return new List<Incident>();
             }
