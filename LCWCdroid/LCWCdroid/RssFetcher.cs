@@ -17,7 +17,7 @@ namespace LCWCdroid
 
     public static class RssFetcher
     {
-        private const string Url = "https://webcad.lcwc911.us/Pages/Public/LiveIncidentsFeed.aspx";
+        private const string Url = "http://webcad.lcwc911.us/Pages/Public/LiveIncidentsFeed.aspx";
 
         public static List<Incident> FetchFeed()
         {
@@ -36,8 +36,9 @@ namespace LCWCdroid
                 System.Diagnostics.Debug.WriteLine("Refresh complete.");
                 return list;
             }
-            catch
+            catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error loading RSS feed: {ex.Message}");
                 return new List<Incident>();
             }
         }

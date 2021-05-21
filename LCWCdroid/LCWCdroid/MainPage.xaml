@@ -6,7 +6,7 @@
   <ContentPage>
     <StackLayout Spacing="0" >
       <Label Text="{Binding Pages[0].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
-      <ListView x:Name="listView0" HasUnevenRows="True" ItemsSource="{Binding Pages[0].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+      <ListView x:Name="listView0" HasUnevenRows="True" ItemsSource="{Binding Pages[0].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" ItemTapped="OnItemTapped" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -26,7 +26,7 @@
   <ContentPage>
     <StackLayout Spacing="0">
             <Label Text="{Binding Pages[1].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
-      <ListView x:Name="listView1" HasUnevenRows="True" ItemsSource="{Binding Pages[1].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+            <ListView x:Name="listView1" HasUnevenRows="True" ItemsSource="{Binding Pages[1].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" ItemTapped="OnItemTapped" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -46,7 +46,7 @@
   <ContentPage>
     <StackLayout Spacing="0">
             <Label Text="{Binding Pages[2].PageTitle, Mode=OneWay}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" />
-      <ListView x:Name="listView2" HasUnevenRows="True" ItemsSource="{Binding Pages[2].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" >
+            <ListView x:Name="listView2" HasUnevenRows="True" ItemsSource="{Binding Pages[2].IncidentList, Mode=OneWay}" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}" ItemTapped="OnItemTapped" >
         <ListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
